@@ -1,0 +1,313 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <title>Refersion Profile</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/jquery-ui.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/header.css">
+      <link rel="stylesheet" type="text/css" href="css/footer.css">
+      <link rel="stylesheet" href="css/jquery.modal.css">
+      <link rel="stylesheet" href="css/profile.css"/>
+      <link rel="stylesheet" href="css/fonts.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    </head>
+    <body>
+      <div class="wrapper">
+        <header class="header">
+        <div class="wrapper-modal wrap-change-login"> <!--change password modal window-->
+          <div class="modal-ref modal-change-pas container-fluid">
+            <div class="modal-header">
+              <img src="img/close.png" alt="close" class="close-icon-header">
+              <h6 class="change-pas-title">Change your password</h6>
+            </div>
+            <div class="wrap-link-container">
+              <p>
+                <form action="get" class="form-chage-pas">
+                  <p class="change-instruction">Current Password</p>
+                  <input class="pass-form" type="password" placeholder=" Type current password">
+                  <div class="change-instruction">New Password</div>
+                  <input class="pass-form" type="password" placeholder=" Type a new password">
+                  <input class="pass-form" type="password" placeholder=" Confirm new password">
+                  <input class="submit-pas" value="Save Changes" type="submit">
+                </form>
+              </p>
+            </div>  
+          </div>
+        </div><!--change password modal window finish-->
+          <div class="header-center ">
+            <div class="wrap-logo">
+              <a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
+              <strong>Refersion</strong>
+            </div>
+            <nav class="navi">
+              <a href="#" id="toggle-link" class="nav-link dashboard-link">Dashboard</a>
+              <a href="#" class="nav-link marketplace-link active-marketplace">Marketplace</a>
+              <div id="message" class="recent">  <!--Recent block-->
+                <h6 class="recent-title">RECENT</h6>
+                <div class="wrap-recent">
+                  <div class="recent-offer clearfix">
+                    <img src="img/mini-zero.png" alt="#" class="mini-offer-image">
+                    <h4 class="offer-title">Plan Zero</h4>
+                    <span class="your-earned">You earned $129.00 <i class="fa fa-caret-up up-arrow" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+                <div class="wrap-recent">
+                  <div class="recent-offer clearfix">
+                    <img src="img/mini-zero.png" alt="#" class="mini-offer-image">
+                    <h4 class="offer-title">Plan Zero</h4>
+                    <span class="your-earned">You earned $129.00 <i class="fa fa-caret-up up-arrow" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+                <div class="wrap-recent">
+                  <div class="recent-offer clearfix">
+                    <img src="img/mini-zero.png" alt="#" class="mini-offer-image">
+                    <h4 class="offer-title">Plan Zero</h4>
+                    <span class="your-earned">You earned $129.00 <i class="fa fa-caret-up up-arrow" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+                <h4 class="all-offer-link">View all your offer</h4>   
+              </div>   
+            </nav>
+            <div class="hamburger icon-close"> <!--Hamburger menu-->
+              <button class="toggle_mnu hamburger">
+                <span class="sandwich">
+                  <span class="sw-topper"></span>
+                  <span class="sw-bottom"></span>
+                  <span class="sw-footer"></span>
+                </span>
+              </button>
+            </div>
+            <nav class="top_mnu"><!--attached files-->
+              <div class="wrap-aatch-mnu">
+                <div class="login-top-mnu">
+                  <i class="fa fa-comments" aria-hidden="true"></i>
+                  <!-- <div class="dropdown login-dropdown"> -->
+                    <button class="btn btn-login-mnu btn-default dropdown-toggle login-dropdown-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      John Smith
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="submenu login-submenu">
+                      <li class="submenu-list"><a href="#"></a>item 1</li>
+                      <li class="submenu-list"><a href="#"></a>item 2</li>
+                      <li class="submenu-list"><a href="#"></a>item 3</li>
+                    </ul>
+                </div>
+                <div class="nav-link nav-link-hidden">
+                  <a id="toggle-link" class="dashboard-link attach-dashboard-link" href="#">Dashboard</a>
+                  <ul class="submenu dashboard-submenu">
+                    <li class="submenu-list"><a href="#"></a>item 1</li>
+                    <li class="submenu-list"><a href="#"></a>item 2</li>
+                    <li class="submenu-list"><a href="#"></a>item 3</li>
+                  </ul>
+                </div>
+                <div class="nav-link nav-link-hidden">
+                  <a class="attach-marketplace-link" href="#">Marketplace</a>
+                </div>
+              </div>
+            </nav>
+            <div class="login">
+              <i class="fa fa-comments" aria-hidden="true"></i>
+              <div class="dropdown login-dropdown">
+                <button class="btn btn-default dropdown-toggle login-dropdown-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  John Smith
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-header" aria-labelledby="dropdownMenu1">
+                  <li class="dropdown-menu-header-list"><a class="edit-your-profile" href="#"><i class="fa fa-user" aria-hidden="true"></i>Edit your profile</a></li>
+                  <li class="dropdown-menu-header-list"><a class="ancLinks" href="#notification-preference"><i class="fa fa-bell" aria-hidden="true"></i>Notification Settings</a></li>
+                  <li class="dropdown-menu-header-list"><a href="#"><i class="fa fa-comment" aria-hidden="true"></i>Feedback</a></li>
+                  <li role="separator" class="divider login-divider"></li>
+                  <li class="dropdown-menu-header-list"><a class="logout" href="#">Log Out <i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>        
+        </header><!--  Header finish  -->
+        <div class="wrapper-modal wrap-change-login"> <!--change password modal window-->
+          <div class="modal-ref modal-change-pas container-fluid">
+            <div class="modal-header">
+              <img src="img/close.png" alt="close" class="close-icon-header">
+              <h6 class="change-pas-title">Change your password</h6>
+            </div>
+            <div class="wrap-link-container">
+              <p>
+                <form action="get" class="form-chage-pas">
+                  <p class="change-instruction">Current Password</p>
+                  <input class="pass-form" type="password" placeholder=" Type current password">
+                  <div class="change-instruction">New Password</div>
+                  <input class="pass-form" type="password" placeholder=" Type a new password">
+                  <input class="pass-form" type="password" placeholder=" Confirm new password">
+                  <input class="submit-pas" value="Save Changes" type="submit">
+                </form>
+              </p>
+            </div>  
+          </div>
+        </div>
+        <!--Main part start-->
+        <section class="profile-wrap clearfix">
+          <div class="profile clearfix">
+            <acide class="account clearfix">
+              <div class="avatar">
+                <img src="img/ava.png" alt="avatar" class="ava-img">
+                <div class="edit-bg">
+                  <a href="#" class="edit">EDIT</a>
+                </div>
+              </div>
+              <ul class="wrap-account-soc clearfix">
+                <li class="fs-account clearfix">
+                  <a class="fs-icon soc-icon" href="#"></a>
+                  <a href="#" class="soc-icon-link">Connected</a>
+                </li>
+                <li class="tw-account clearfix">
+                  <a class="tw-icon soc-icon" href="#"></a>
+                  <a href="#" class="soc-icon-link">Connected</a>
+                </li>
+                <li class="insta-account clearfix">
+                  <a class="insta-icon soc-icon" href="#"></a>
+                  <a href="#" class="soc-icon-link">Connected Now</a>
+                </li>
+              </ul>
+              <button class="de-activate">De-Activate Account</button>
+            </acide>
+            <main class="main-profile">
+              <div class="profile-center">
+                <form action="get" class="profile-settings">
+                  <div class="profile-email">
+                    <p class="form-title">Your Email / Login</p>
+                    <input type="email" class="email-input" placeholder=" kyle@kyleskelly@co.uk">  
+                  </div>
+                  <div class="profile-pass">
+                    <p class="form-title">Password</p>
+                    <input class="change-input" type="password" placeholder=" ********"><input class="submit-change" type="submit" value=" Change Password">
+                  </div>
+                  <div class="name-wrap">
+                    <div class="name-container">
+                      <p class="form-title">First Name</p>
+                      <input type="text" class=" name-input" placeholder="Kyle">
+                    </div>
+                    <div class="name-container">
+                      <p class="form-title">Last Name</p>
+                      <input type="text" class="name-input" placeholder=" Skelly">
+                    </div>
+                  </div>
+                  <div class="bio-wrap clearfix">
+                    <p class="form-title bio-title">Bio</p>
+                    <span id="textarea_feedback" class="counter"></span>
+                    <textarea name="text" id="textarea" maxlength="144" class="bio-text"></textarea>
+                  </div>
+                  <div class="website">
+                    <p class="form-title bio-title">Website</p>
+                    <input type="text" class="website-input" placeholder=" www.sniboxu.com">
+                  </div>
+                  <div class="wrap-privacy">
+                    <p class="form-title">Profile Privacy</p>
+                    <div class="dropdown privacy-dropdown">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Public <span class="privacy-description-dropdown">Listed on Google<i class="fa fa-2x fa-angle-down angle-down" aria-hidden="true"></i></span>
+                      </button>
+                      <ul class="dropdown-menu list-privacy-dropdown" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Privat</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="save-wrap clearfix">
+                    <input type="submite" class="save-button" value="Save Changes">
+                  </div>
+                </form>
+              </div>
+            </main>
+          </div><!-- profile finish-->
+          <div id="notification-preference" class="notification">
+            <div class="notification-center">
+              <h5 class="notification-title"><i class="fa notification-icon fa-bell" aria-hidden="true"></i>Your notification preferences</h5>
+              <p class="form-title">Receive email alerts for</p>
+              <ul class="preferences-container">
+                  <li class="preferences-list"><a class="preferences-button" href="#">New Messages</a></li>
+                  <li class="preferences-list"><a class="preferences-button" href="#">Offer Acceptance</a></li>
+                  <li class="preferences-list"><a class="preferences-button" href="#">New Conversion</a></li>
+                  <li class="preferences-list"><a class="preferences-button" href="#">New Offer <span>Weekly</span></a></li>
+              </ul>
+              <div class="save-wrap clearfix">
+                <button class="save-button bottom-save-button">Save Changes</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+          <footer class="footer clearfix"> <!-- Footer start -->
+            <div class="footer-content container">
+              <div class="row top-footer ">
+                <div class="wrap-revers">
+                  <div class=" col-md-3 col-sm-12">
+                    <span class="newsletter-title"><i class="fa fa-envelope-o" aria-hidden="true"></i>Sign up for our newsletter</span>
+                    <!-- <span class="info-marketer">Curated for independent marketers</span> -->
+                  </div>
+                  <div class="col-md-5 col-sm-12">
+                    <div class="email-form clearfix">
+                      <input type="text" placeholder=" Email Address" class="email"><a href="#" class="email-link"><i class="fa fa-arrow-right email-link-icon" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class=" col-md-4 col-sm-12">
+                  <a href="#" class="bottom-logo">
+                    <img src="img/bottom-logo.png" alt="#">
+                  </a>
+                </div>
+              </div>
+              <div class="row middle-footer">
+                <div class="col-sm-3 col-xs-6 marketplace">
+                  <h4 class="footer-subtitle">Marketplace</h4>
+                  <ul class="list">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Marketplace Listings</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-2 col-xs-6 refersion">
+                  <h4 class="footer-subtitle">Refersion</h4>
+                  <ul class="list">
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Login</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-2 col-xs-6 api">
+                  <ul class="list">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Merchant Login</a></li>
+                    <li><a href="#">Affiliate Login</a></li>
+                    <li><a href="#">API Docs</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 col-xs-6 legal">
+                  <h4 class="footer-subtitle">Legal</h4>
+                  <ul class="list">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-2 col-xs-6 social">
+                  <h4 class="footer-subtitle social-subtitle">Social Media</h4>
+                  <ul class="list">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+      </div>
+      <script src="js/jquery-1.12.3.min.js"></script>
+<!--       <script src="js/jquery.modal.js" ></script> -->
+      <script src="js/common.js" ></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+  </html>     

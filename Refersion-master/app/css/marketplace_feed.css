@@ -1,0 +1,496 @@
+/*-------------------
+	marketplace_feed
+--------------------*/
+/*------------
+  Reset css
+--------------*/
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "HelveticaNeueETW01-55Rg";
+  -webkit-font-smoothing: antialiased; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+.clearfix {
+  clear: both;
+  overflow: auto; }
+
+/*-----------------
+		Main-block
+------------------*/
+.main-block {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100vh; }
+
+/*------------------
+		Search-result
+--------------------*/
+.search-result {
+  width: 72.2%;
+  float: left; }
+
+.header-search-result {
+  margin: 30px 0;
+  overflow: inherit; }
+
+.title-search-result {
+  font-size: 25px;
+  color: #000;
+  float: left;
+  -webkit-font-smoothing: antialiased; }
+
+.sort-by {
+  float: right;
+  font-size: 14px;
+  color: #555;
+  margin-top: 26px; }
+
+.sort-by-choise {
+  display: inline-block;
+  position: relative;
+  font-family: "HelveticaNeueETW01-75Bd";
+  margin-left: 14px;
+  cursor: pointer; }
+
+.dropdown-toggle {
+  font-family: "HelveticaNeueETW01-75Bd";
+  border: none; }
+
+.main-search-result {
+  -webkit-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  margin-bottom: 16px; }
+
+.result-image {
+  display: block;
+  margin: 51px 0 54px 28px; }
+
+.result-info {
+  margin-top: 8%; }
+
+.result-info span {
+  display: block;
+  line-height: 1.25;
+  color: #555; }
+
+.brand-name {
+  font-family: "HelveticaNeueETW01-75Bd";
+  font-size: 16px; }
+
+.description {
+  font-size: 16px; }
+
+.link {
+  color: #777777;
+  text-decoration: underline; }
+
+.result-price {
+  margin-top: 8%; }
+
+.result-price span {
+  display: block;
+  font-size: 16px;
+  color: #555;
+  font-family: "HelveticaNeueETW01-75Bd";
+  line-height: 1.25;
+  margin-left: 12px; }
+
+.sale {
+  font-family: "HelveticaNeueETW01-75Bd";
+  color: #555; }
+
+.offer-button {
+  color: #fff;
+  width: 180px;
+  display: block;
+  text-align: center;
+  padding: 17px 0;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  font-family: "HelveticaNeueETW01-75Bd";
+  margin: 59px 0 0 45px;
+  background: #179e11; }
+
+.offer-button:hover {
+  background: #69b511;
+  color: #fff;
+  -webkit-transition: 500ms;
+  transition: 500ms; }
+
+.input-slider {
+  text-align: left !important;
+  color: #555 !important; }
+
+.green-border {
+  display: inline-block !important;
+  border: 2px solid #2ba300;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  text-align: center;
+  width: 45px;
+  padding: 4px 0;
+  margin: 0 5px 5px 0;
+  color: #121212 !important; }
+
+.price {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  color: #555;
+  font-family: "HelveticaNeueETW01-75Bd"; }
+
+.newest-dropdown li:hover {
+  background: #ededed;
+  -webkit-transition: 500ms;
+  transition: 500ms; }
+
+/*--------------------
+		Pagination
+---------------------*/
+.paginations {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.right {
+  text-align: right; }
+
+.hover-link:hover span {
+  color: #555555;
+  -webkit-transition: 500ms;
+  transition: 500ms; }
+
+.hover-link:hover i {
+  color: #179e0e;
+  -webkit-transition: 500ms;
+  transition: 500ms; }
+
+.center {
+  margin-top: 2px;
+  color: #121212;
+  font-family: "HelveticaNeueETW01-75Bd";
+  font-size: 16px; }
+
+.paginations a {
+  color: #121212;
+  font-family: "HelveticaNeueETW01-75Bd";
+  font-size: 16px;
+  display: inline-block;
+  padding-top: 10px; }
+
+.left-arrow {
+  display: inline-block; }
+
+.next {
+  padding: 14px 7px 0 0;
+  vertical-align: middle;
+  color: #979797;
+  font-weight: 500;
+  font-size: 18px; }
+
+.prev {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 7px;
+  color: #979797;
+  font-weight: 500;
+  font-size: 18px; }
+
+.left-arrow i {
+  font-size: 20px;
+  vertical-align: middle;
+  color: #979797; }
+
+.right-arrow i {
+  font-size: 20px;
+  vertical-align: middle;
+  color: #979797; }
+
+/* .left-center, .right-center { color: #121212; } */
+.left-center:hover {
+  color: #000;
+  -webkit-transition: 500ms;
+  transition: 500ms; }
+
+.right-center:hover {
+  color: #000;
+  -webkit-transition: 500ms;
+  transition: 500ms; }
+
+.right-arrow i:hover {
+  color: #179e11; }
+
+.left-arrow i:hover {
+  color: #179e11; }
+
+.center-container {
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5; }
+
+@-moz-document url-prefix() {
+  .next {
+    padding-top: 0; } }
+
+@media only screen and (max-width: 1200px) {
+  .main-search-result {
+    margin: 0 0 16px 10px; }
+  .result-image {
+    margin: 66px 0 60px 1%;
+    width: 80%; }
+  .offer-button {
+    margin: 62px 0 0 0;
+    width: 100%; } }
+
+@media only screen and (max-width: 930px) {
+  .offer-button {
+    margin: 35px 0 0 0; }
+  .result-image {
+    width: 100%;
+    margin: 56px 0 56px 1%; }
+  .result-price span {
+    margin-left: 0; }
+  .ui-widget-content {
+    width: 95%; } }
+
+@media only screen and (max-width: 768px) {
+  .result-image {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px; }
+  .result-info, .result-price {
+    text-align: center; }
+  .offer-button {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .paginations {
+    margin-bottom: 30px; }
+  .main-block {
+    height: 100%; } }
+
+@media only screen and (max-width: 500px) {
+  /* .center { margin-left: 25%; } */
+  .center {
+    display: none; }
+  .left, .right {
+    width: 50%; } }
+
+@media only screen and (max-width: 450px) {
+  .title-search-result {
+    float: none;
+    text-align: center; }
+  .sort-by {
+    text-align: center;
+    float: none; }
+  .center {
+    margin-left: 20%; }
+  .dropdown {
+    margin-left: 0; }
+  .nav-link-hidden a {
+    margin-left: 0;
+    background: 0; } }
+
+/*--------------------
+		Right-sidebar
+----------------------*/
+.clear-button {
+  background: none;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  outline: none;
+  color: #000;
+  display: block;
+  font-size: 16px;
+  padding: 12px 50px;
+  margin-bottom: 17px;
+  display: none; }
+
+.clear-button:hover {
+  border: 1px solid #000;
+  -webkit-transition: 500px;
+  transition: 500px; }
+
+.fa-times {
+  padding-left: 6px;
+  color: #b42329; }
+
+.right-sidebar {
+  width: 21%;
+  float: right; }
+
+.wrap-sidebar:first-child {
+  margin-top: 115px; }
+
+.offer-categories {
+  margin-bottom: 70px; }
+
+.sidebar-subtitle {
+  cursor: pointer;
+  font-family: "HelveticaNeueETW01-75Bd";
+  font-size: 16px;
+  color: #121212;
+  margin: 0 0 25px; }
+
+.first-subtitle {
+  margin-bottom: 10px; }
+
+input[type="checkbox"] {
+  display: none; }
+
+input[type="checkbox"] + label {
+  font-weight: normal;
+  font-size: 16px;
+  font-weight: 500;
+  color: #545454;
+  cursor: pointer;
+  margin-bottom: 13px; }
+
+input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #d4d4d4;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  margin: 0 9px 0 0;
+  float: left; }
+
+input[type="checkbox"]:checked + label::before {
+  background: url(../img/checkbox1.png) 100% 100% no-repeat;
+  background-size: cover;
+  color: #189e11 !important;
+  border: 2px solid #189e11; }
+
+#amount {
+  display: block; }
+
+.wrap-slider {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  width: 88.7%; }
+
+.wrap-form {
+  margin-top: 15px; }
+
+.wrap-distribution, .wrap-payment {
+  margin: 25px 0;
+  border-bottom: 1px solid #e5e5e5;
+  width: 88.7%; }
+
+.offer-categories {
+  display: none; }
+
+.choise-angle-down {
+  color: #189e11;
+  margin-left: 18px; }
+
+@media only screen and (max-width: 1200px) {
+  .right-sidebar {
+    width: 27%; }
+  .paginations {
+    width: 90%; }
+  .clear-button {
+    width: 95%;
+    padding: 12px 0; } }
+
+@media only screen and (max-width: 767px) {
+  .title-search-result {
+    margin-top: 25px; }
+  .sale, .cookie-day {
+    width: 32%;
+    margin: 0 auto !important;
+    text-align: left; }
+  .price {
+    margin-bottom: 20px; } }
+
+@media only screen and (max-width: 700px) {
+  .search-result, .right-sidebar, .wrap-sidebar {
+    width: 100%; }
+  .main-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+  .wrap-form {
+    /* display: flex; flex-direction: row-reverse; */ }
+  .wrap-top-forms {
+    width: 100%; }
+  .distribution, .payment {
+    width: 100%; }
+  .wrap-slider {
+    text-align: center; }
+  .input-slider {
+    display: block;
+    margin: 0 auto; }
+  .ui-widget.ui-widget-content {
+    margin: 0 auto;
+    margin-bottom: 40px; }
+  .wrap-sidebar:first-child {
+    margin-top: 20px; }
+  .offer-categories {
+    margin-bottom: 0; }
+  .clear-button {
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 20px; }
+  .ui-widget-content {
+    width: 60%; }
+  .distribution, .payment {
+    display: none; }
+  .wrap-distribution, .wrap-payment {
+    border-bottom: none;
+    width: 100%; }
+  .wrap-form form p {
+    width: 40%;
+    margin: 0 auto; }
+  .sidebar-subtitle {
+    text-align: center; }
+  .wrap-slider {
+    width: 100%; }
+  #amount {
+    text-align: center !important; } }
+
+@media only screen and (max-width: 550px) {
+  /* 	.offer-categories { width: 60%; } */
+  /* 	.wrap-top-forms { width: 40%; } */
+  /* 	.distribution { float: none; width: 100%; }
+	.payment { float: none; width: 100%; } */
+  .sale, .cookie-day {
+    width: 60%; }
+  .wrap-form form p {
+    width: 50%;
+    margin: 0 auto; }
+  input[type="checkbox"] + label {
+    font-size: 12px; } }
+
+@media only screen and (max-width: 320px) {
+  .wrap-form form p {
+    width: 70%; } }

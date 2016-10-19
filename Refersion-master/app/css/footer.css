@@ -1,0 +1,224 @@
+/*--------------------
+    Footer
+---------------------*/
+.footer-content {
+  max-width: 1171px;
+  margin: 0 auto; }
+
+/*--------------------
+    Footer
+---------------------*/
+.footer-content {
+  max-width: 1171px;
+  margin: 0 auto; }
+
+/*---------------------
+    Top-footer
+---------------------*/
+.footer {
+  background: #f5f5f5;
+  border-top: 1px solid #ededed; }
+
+.top-footer {
+  border-bottom: 1px solid #ededed; }
+
+.newsletter-title {
+  display: block;
+  font-family: "HelveticaNeueETW01-75Bd";
+  font-size: 16px;
+  margin-top: 45px; }
+
+.newsletter-title i {
+  padding: 0 8px 0 0;
+  color: #000; }
+
+.info-marketer {
+  display: block;
+  color: #777;
+  font-family: "HelveticaNeueETW01-75Bd";
+  font-size: 14px; }
+
+.email {
+  width: 356px;
+  height: 50px;
+  border: none;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  margin: 41px 0 39px 0;
+  float: left; }
+
+.email-link {
+  display: inline-block;
+  width: 50px;
+  height: 49px;
+  background: #179e11;
+  float: left;
+  -webkit-border-radius: 0 3px 3px 0;
+          border-radius: 0 3px 3px 0;
+  color: #fff;
+  text-align: center;
+  margin-top: 41px; }
+
+.email-link-icon {
+  padding: 16px 0 0 0; }
+
+.bottom-logo {
+  display: block;
+  margin: 42px 5px 0 0;
+  float: right; }
+
+.email-form input[type="text"] {
+  padding-left: 15px; }
+
+/*---------------------
+    Middle footer
+-----------------------*/
+.middle-footer {
+  border-bottom: 1px solid #ededed;
+  margin-top: 30px; }
+
+.footer-subtitle {
+  margin-bottom: 25px;
+  color: #777;
+  font-family: "HelveticaNeueETW01-75Bd";
+  font-size: 16px; }
+
+.list {
+  margin-bottom: 35px; }
+
+.list a {
+  font-family: "HelveticaNeueETW01-55Rg";
+  font-size: 15px;
+  color: #000; }
+
+.list a:hover {
+  text-decoration: underline;
+  color: #312b2b;
+  -webkit-transition: 500ms;
+  transition: 500ms; }
+
+.api {
+  margin-top: 52px; }
+
+.social-list {
+  width: 50%;
+  /* margin: 0 auto; */ }
+
+.social-list li {
+  float: left;
+  width: 50px;
+  height: 44px; }
+
+.facebook {
+  margin: 0 9px 0 10px; }
+
+.facebook a {
+  width: 50px;
+  height: 44px;
+  display: block;
+  background: url(../img/sprite.png) 0% 17% no-repeat; }
+
+.twitter a {
+  width: 50px;
+  height: 44px;
+  display: block;
+  background: url(../img/sprite.png) -2% 36.6% no-repeat; }
+
+/*------------------
+    Footer bottom
+-------------------*/
+.bottom-footer span {
+  display: block;
+  font-size: 13px;
+  color: #555;
+  padding: 49px 0 80px 0; }
+
+.bottom-footer div {
+  padding: 0; }
+
+.brand-info {
+  text-align: right; }
+
+@media only screen and (max-width: 1200px) {
+  .email {
+    width: 250px; }
+  .social-list {
+    width: 70%; } }
+
+@media only screen and (max-width: 992px) {
+  .bottom-logo {
+    float: none;
+    text-align: center; }
+  .top-footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+  .email-form {
+    max-width: 300px;
+    margin: 0 auto; }
+  .newsletter-title {
+    text-align: center;
+    margin-top: 50px; }
+  .info-marketer {
+    text-align: center;
+    margin-bottom: 0; }
+  .social-list {
+    width: 100%; }
+  .email, .email-link {
+    margin-top: 20px; } }
+
+@media only screen and (max-width: 766px) {
+  .middle-footer {
+    text-align: center; }
+  .api {
+    margin-top: 5px; }
+  .social-list li {
+    margin: 0;
+    width: 50%; }
+  .bottom-footer {
+    text-align: center; }
+  .bottom-footer span {
+    text-align: center;
+    padding-bottom: 0;
+    width: 90%;
+    margin: 0 auto; }
+  .footer-subtitle {
+    text-align: left;
+    margin-left: 20%;
+    margin-bottom: 18px; }
+  .social-subtitle {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+  .list {
+    text-align: left;
+    margin-left: 20%; }
+  .list a {
+    margin-bottom: 3px; }
+  .social-list {
+    width: 30%;
+    margin: 0 auto; }
+  .newsletter-title {
+    margin-top: 20px; }
+  .email, .email-link {
+    margin-top: 10px; }
+  .social {
+    float: right; }
+  .social-subtitle {
+    text-align: left;
+    margin-left: 20%; } }
+
+@media only screen and (max-width: 320px) {
+  .email {
+    width: 200px; }
+  .result-price span {
+    font-weight: 400; }
+  .wrap-distribution, .wrap-payment {
+    width: 60%;
+    margin: 0 auto; } }

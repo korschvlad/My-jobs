@@ -1,0 +1,146 @@
+/*----------------------
+		Profile
+------------------------*/
+
+
+/*------------
+  Reset css
+--------------*/
+
+
+$white: #fff;
+$green: #179e11;
+
+html,body { margin: 0; padding: 0; height: 100%; overflow: hidden;}
+body { height: 100%; margin: 0; font-family:"HelveticaNeueETW01-55Rg"; overflow: auto; }
+a { text-decoration: none;}
+ul { padding: 0; }
+li { list-style: none;}
+.clearfix { clear: both; overflow: auto;}
+.wrapper { position: relative; }
+
+/*---------------------
+		Profile
+----------------------*/
+
+.profile-wrap { background: #fbfdff; }
+.profile { display: flex; max-width: 945px; margin: 0 auto; box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1); margin-top: 50px; margin-bottom: 50px; background: #fff; }
+
+/*------------------------
+		account
+------------------------*/
+
+.account { border-right: 1px solid #ededed; float: left; width: 30%; position: relative; }
+.avatar { cursor: pointer; position: relative; max-width: 155px; max-height: 155px; margin: 0 auto; margin-top: 50px; margin-bottom: 30px; }
+.edit { color: #969696; display: block; margin: 82% 0 0 40%; }
+.edit-bg { width: 155px; height: 155px; background: url(../img/edit-bg1.png) -1px -3px no-repeat; position: absolute; top: 0; left: 0; right: 0; }
+.ava-img { border-radius: 50%; height: 155px; width: 155px; }
+.wrap-account-soc { width: 80%; margin: 0 auto; }
+.soc-icon { width: 51px; height: 50px; float: left; margin: 20px 20px 19px 10%; }
+.soc-link { float: left; }
+.fs-icon { background: url(../img/account-soc-sprite.png) 0 0 no-repeat; }
+.tw-icon { background: url(../img/account-soc-sprite.png) 0 -59px no-repeat; }
+.insta-icon { background: url(../img/account-soc-sprite.png) 0 -117px no-repeat; }
+.soc-icon-link { font-family:"HelveticaNeueETW01-75Bd"; font-size: 14px; color: #179e11; margin-top: 35px; display: block; }
+.wrap-account-soc li a:hover { color: #777777; transition: 500ms; }
+.fs-account, .tw-account { border-bottom: 1px solid #ededed; }
+.de-activate { width: 200px; margin: 0 auto; display: block; color: #777; border: 1px solid #ededed; background: none; border-radius: 3px;
+	padding: 18px 0; font-family:"HelveticaNeueETW01-75Bd"; font-size: 16px; position: absolute; bottom: 40px; left: 0; right: 0; }
+.de-activate:hover { color: #179e11; transition: 500ms; }
+
+/*-------------------
+		Main profile
+--------------------*/
+
+.main-profile { width: 70%; float: left; }
+.profile-center { width: 80%; margin: 0 auto; }
+.profile-settings input { padding-left: 25px; color: #555; vertical-align: middle;}
+.profile-email { margin: 20px 0 0 0; }
+.form-title { font-size: 14px; font-family:"HelveticaNeueETW01-75Bd"; color: #121212; margin: 25px 0 17px 5px; }
+.email-input { height: 50px; border: 2px solid #ededed; border-radius: 5px; display: block; width: 100%; color: #555; font-size: 16px; }
+.change-input { height: 50px; border: 2px solid #ededed; width: 70%; border-right: none; border-radius: 5px 0 0 5px; }
+.submit-change { height: 50px; border: 2px solid #ededed; width: 30%; border-left: none; background: none; border-radius: 0 5px 5px 0;
+	font-size: 12px; font-family:"HelveticaNeueETW01-75Bd"; }
+.name-wrap {  }
+.name-container { width: 50%; float: left; }
+.name-input { height: 50px; border: 2px solid #ededed; border-radius: 5px; width: 95%; }
+.name-input [type="placeholder"] { padding-left: 20px; }
+.counter {  }
+.bio-title { float: left }
+.counter{ float: right; font-family:"HelveticaNeueETW01-75Bd"; font-size: 14px; color: #777; margin: 25px 20px 0 0; }
+.bio-text { width: 100%; border: 2px solid #ededed; border-radius: 5px; height: 125px; resize: none; }
+.website-input { width: 100%; border: 2px solid #ededed; border-radius: 5px; height: 50px; }
+.privacy-dropdown { height: 50px; width: 100%; outline: none; }
+.privacy-dropdown button { width: 100%; height: 50px; border: 2px solid #ededed; border-radius: 5px; text-align: left; color: #179e11; 
+font-size: 16px; font-weight: 600; }
+.privacy-description-dropdown { font-style: italic; color: #777; font-size: 13px; padding-left: 10px; }
+.angle-down { float: right; padding-right: 10px; }
+.save-wrap {  }
+.save-button { color: #fff !important; font-family:"HelveticaNeueETW01-75Bd"; background: #179e11; padding: 15px; border: none; border-radius: 3px;
+ width: 150px; text-align: center; display: block; float: right; margin: 28px 0 40px 0; cursor: pointer; }
+.save-button:hover { background: #69b511; transition: 500ms; }
+.list-privacy-dropdown { width: 100%; }
+.list-privacy-dropdown li:hover { background: #ededed; }
+
+/*-----------------------------
+		Notification block
+----------------------------------*/
+
+.notification { display: flex; max-width: 945px; margin: 0 auto; box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.1); background: #fff; margin-bottom: 50px; }
+.notification-center { width: 90%; margin: 0 auto;  }
+.notification-title { font-size: 23px; color: #121212; font-weight: 400; margin: 50px 0 30px 0; }
+.notification-icon { padding-right: 15px; }
+.preferences-container {  }
+.preferences-list { width: 25%; float: left; }
+.preferences-button { width: 90%; margin: 0 auto; display: block; border: 2px solid #ededed; border-radius: 5px; 
+color: #555; font-size: 16px; text-align: center; padding: 15px 0; }
+.bottom-save-button { margin-right: 12px; }
+.preferences-button-active { color: #179e11; font-family:"HelveticaNeueETW01-75Bd"; border: 2px solid #179e11; }
+
+@-moz-document url-prefix() {
+	.privacy-description-dropdown { display: inline-block; }
+	.angle-down { float: none; margin-left: 88%; }
+}  
+
+/*-------------------------
+		Media queries
+-------------------------*/
+
+@media only screen and (max-width : 800px) {
+	.profile-settings input { padding-left: 2px; }
+	@-moz-document url-prefix() {
+	.angle-down { margin-left: 78%; }
+}  
+}
+@media only screen and (max-width : 700px) {
+	.change-input, .submit-change { width: 50%; }
+	.de-activate { width: 90%;  }
+	.soc-icon { float: none; display: block; margin: 0 auto; }
+	.soc-icon-link { text-align: center; margin: 20px 0 15px 0; }
+	.fs-account, .tw-account { margin-bottom: 20px; }
+	.preferences-button { height: 78px; }
+}
+@media only screen and (max-width : 550px) {
+	.profile-center { width: 95%; }
+	.edit-bg { display: none; }
+	.ava-img { width: 100%; height: auto; }
+	.preferences-list { width: 50%; margin-bottom: 10px; }
+	.preferences-button { height: auto; }
+	.save-button { margin: 0 auto; float: none; margin-top: 35px; margin-bottom: 35px; }
+	.name-container { width: 100%; }
+}
+@media only screen and (max-width : 450px) {
+	.account { width: 100%; }
+	.profile { flex-direction: column; }
+	.de-activate { position: inherit; margin-top: 30px; }
+	.wrap-account-soc { margin-bottom: 50px; }
+	.main-profile { width: 100%; }
+	.form-title { text-align: center; }
+	.name-input { width: 100%; }
+
+}
+@media only screen and (max-width : 320px) {
+	.preferences-button { height: 78px; }
+	.notification-title { text-align: center; }
+	.dashboard-link { margin-left: 0; }
+}

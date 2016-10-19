@@ -1,0 +1,164 @@
+
+$white: #fff;
+$green: #179e11;
+
+          /*----------------------
+              Offer detail page
+          ------------------------*/
+
+
+.main-offer-detail { max-width: 1172px; margin: 0 auto; background: #fff; border: 1px solid #757578; border-radius: 3px;
+  margin-top: 75px; margin-bottom: 40px; display: none; position: absolute; top: 1px; left: 0; right: 0; }
+.wrap-modal { position: relative; }
+.left-sidebar { width: 305px; float: left; box-shadow: 13px -8px 9px -13px rgba(237, 237, 237, 0.9); }
+.about-product { border-bottom: 1px solid #e5e5e5; text-align: left; }
+.product-logo { display: block; padding: 40px 35px 30px 35px; }
+.goods-title { font-family:"HelveticaNeueETW01-75Bd"; font-size: 25px; padding-left: 35px; color: #121212; margin: 0; }
+.goods-link { color: #555555; font-size: 15px; display: inline-block; text-decoration: underline;
+  padding: 5px 0 0 35px; font-family:"HelveticaNeueETW01-65Md"; }
+.send-message-link { display: block; color: #555; font-size: 15px; padding: 0 0 0 35px; font-family:"HelveticaNeueETW01-65Md"; }
+.fa-long-arrow-right { display: block; padding-left: 7px; color: #9f9f9f; margin-bottom: 30px; }
+.earnings { border-bottom: 1px solid #e5e5e5;  }
+.pay-image { width: 49px; height: 45px; background: #179e11; border-radius: 5px; margin: 28px 14px 26px 35px; float: left; }
+.pay-image span { display: block; height: 45px; background: url(../img/sprite.png) 14px 6px no-repeat; }
+.avg-earning { text-align: left; display: block; margin-top: 28px; font-size: 14px; color: #3b4044; font-family:"HelveticaNeueETW01-75Bd"; }
+.price-earning-wrap { float: left; }
+.price-earning { font-size: 25px; line-height: 0.8; float: left; }
+.usd { font-family:"HelveticaNeueETW01-75Bd"; font-size: 11px; padding-left: 6px; }
+.close-icon-offer { position: absolute; right: 0; top: -35px; z-index: 53; cursor: pointer; }
+
+
+/*-------- more-goods-info----------*/
+
+.more-goods-info { margin-top: 30px; }
+.tools { margin-left: 35px; font-family:"HelveticaNeueETW01-75Bd"; font-size: 15px; text-align: left; }
+.tools span { display: inline-block; width: 49px; height: 30px; border: 2px solid #179e11; border-radius: 3px; text-align: center;
+   padding-top: 3px; margin-right: 7px; }
+.material { margin: 30px 0 0 35px; text-align: left; }
+.material-title { color: #3b4044; font-family:"HelveticaNeueETW01-75Bd"; font-size: 14px; }
+.fa-check { color: #179e11; padding-right: 13px; } 
+.bull { color: #9f9f9f; padding: 0 5px; }
+.material-description { color: #555555; font-size: 15px; }
+.bottom-material { margin: 20px 0 90px 35px;  }
+.category { margin: 0 0 40px 35px; }
+.category-part { font-size: 15px; text-align: left; }
+.category-title { font-family:"HelveticaNeueETW01-75Bd"; padding-right: 7px; }
+.top-banner { display:block; margin: 0 auto; }
+
+/*----------------------------------------
+  details-main-content. first step  
+-----------------------------------------*/
+
+.details-main-content { width: 73.5%; float: right; position: relative; }
+.wrap-header-details { overflow: auto; }
+.header-details { width: 91%; margin: 0 auto; text-align: left; background: #fff; overflow: auto; position: relative;}
+.bottom-hr { position: absolute; width: 100%; bottom: 0; height: 1px; background: #ededed; width: 92%; margin: 0; z-index: auto; }
+
+.nav-header-details { float: left; width: 20%;  font-size: 15px; color: #c1c1c1; }
+.details-button { width: 40%; }
+.step-title { position: relative; display: inline-block; padding: 48px 0 38px 0; font-size: 25px; color: #c1c1c1; }
+.step-title:hover { color: #222; transition: 500ms; }
+.apply { display: block; width: 190px; margin: 0 auto; background: $green; color: #fff; text-align: center; font-family:"HelveticaNeueETW01-75Bd";
+  font-size: 18px; padding: 17px ; border: none; outline: none; border-radius: 3px; margin-top: 30px; margin-bottom: 32px; }
+.apply:hover { background: #69b511; transition: 500ms; }
+.arrow-right { padding-left: 28px; }
+.goods { outline: none; }
+.goods-title-content { font-family:"HelveticaNeueETW01-55Rg"; font-size: 25px; width: 90%; margin-left: 40px; color: #121212; text-align: left; 
+  padding-top: 20px; }
+.goods-image { display: block; margin: 50px 0 0 35px; }
+.goods-description-wrap { width: 90%; margin: 0 auto; text-align: left; }
+.goods-description { font-size: 26px; color: #3b4044; margin: 30px 0 50px 0; }
+.goods-subdescription { font-family:"HelveticaNeueETW01-75Bd"; font-size: 16px; }
+.goods-family { font-size: 16px; color: #555555; }
+.close-button { position: absolute; right: 5px; top: -40px; background: none; outline: none; z-index: 1001; font-size: 25px; border: none; }
+.close-button i { color: #fff;}
+.double { display: none; }
+.main-content { height: 693px; overflow-y: auto; width: 100% }
+
+
+
+
+/*--------------------------
+    second-step 
+---------------------------*/
+
+.second-step { text-align: left; padding-top: 0px; }
+.second-title { float: left; width: initial; }
+.items { float: right; font-size: 25px; color: #555555; margin: 40px 5% 0 0; }
+.second-main { width: 90%; margin: 0 auto; margin-top: 25px; }
+.left-content { float: left; width: 48%; }
+.right-content { float: right; width: 48%; }
+.first-banner { border: 3px solid #ededed; border-radius: 3px; margin-bottom: 26px; }
+.banner-title { font-family:"HelveticaNeueETW01-75Bd"; color: #3b4044; font-size: 15px; margin: 24px 0 10px 25px; }
+.banner-subtitle { color: #555555; font-size: 15px; margin: 0 0 0 25px;  }
+.product-border { border: 1px solid #e2e2e2; margin: 24px 30px;  }
+.banner-logo { display: block; padding: 11% 13%; margin: 0 auto; }
+
+
+/*--------------------------
+    terms-step 
+---------------------------*/
+
+.terms-step { margin: 122px 0 0 0; }
+.terms-title { margin-top: 43px; }
+.terms-subtitle { text-align: left; font-family:"HelveticaNeueETW01-75Bd"; font-size: 14px; color: #3b4044; margin: 15px 0 23px 5%; }
+.terms-content { text-align: left; font-size: 14px; color: #555555; width: 90%; margin: 0 auto; line-height: 2; }
+.active-step { color: #222222; border-bottom: 2px solid #179e11; padding-bottom: 36px; z-index: 2; }
+
+//arrow navigation
+.arrow-nav-right { position: absolute; right: -85px; top: 330px; cursor: pointer; }
+.arrow-nav-left { position: absolute; left: -85px; top: 330px; cursor: pointer; }
+
+@media only screen and (max-width : 1366px) {
+  .left-sidebar { left: 6.5%; }
+}
+@media only screen and (max-width : 1280px) {
+  .left-sidebar { left: 4.5%; /* box-shadow: none; */ }
+  .arrow-nav-left, .arrow-nav-right { display: none; } 
+}
+@media only screen and (max-width : 1170px) {
+  .left-sidebar { left: 0; width: 22.6%; }
+  .main-offer-detail { top: 20px; }
+  .close-button { display: block; position: absolute; top: 0; right: 10px; color: #555; z-index: 51; }
+} 
+@media only screen and (max-width : 1125px) {
+.goods img { width: 90%; }
+.product-logo { width: 90%; }
+.left-content, .right-content { width: 49%; }
+}
+
+@media only screen and (max-width : 900px) {
+  .left-sidebar { width: 40%; }
+  .details-main-content { width: 60%; }
+  .apply { width: initial; margin-bottom: 22px; }
+  .arrow-right { padding-left: 15px; }
+  .goods-title { margin-left: 0; font-size: 20px; margin-top: 7px; }
+  .step-title { font-size: 18px; }
+}
+
+@media only screen and (max-width : 760px) {
+  .details-creative, .second-step { display: none; }
+  .arrow-right { padding-left: 5px; }
+  .nav-header-details { width: 30%; }
+  .details-button { width: 40%; font-size: 14px; }
+  .goods-description { font-size: 16px; }
+  .terms-content { line-height: 1.3; }
+  .apply { font-size: 14px; margin-bottom: 27px; }
+
+} 
+
+@media only screen and (max-width : 600px) {
+  .goods, .details-offer, .terms { display: none; }
+  .left-sidebar { width: 100%; box-shadow: none; position: inherit; }
+  .header-details { position: inherit; }
+  .details-main-content { width: 100%; }
+  .details-button { width: 100%; }
+  .apply { width: 65%; }
+  .bottom-material { margin-bottom: 30px; }
+/*   .main-offer-detail { height: 100vh; } */
+  .apply { display: none; }
+  .double { display: block; }
+  .main-content { display: none; }
+  .main-offer-detail { top: 0; }
+  .close-icon { }
+}

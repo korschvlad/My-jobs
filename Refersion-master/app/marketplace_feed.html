@@ -1,0 +1,568 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <title>Refersion</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/jquery-ui.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/jquery.modal.css">
+      <link rel="stylesheet" type="text/css" href="css/header.css">
+      <link rel="stylesheet" href="css/marketplace_feed.css"/>
+      <link rel="stylesheet" href="css/offer_details.css">
+      <link rel="stylesheet" type="text/css" href="css/footer.css">
+      <link rel="stylesheet" href="css/fonts.css">
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    </head>
+    <body>
+      <div class="wrapper">
+        <header class="header">
+          <div class="header-center ">
+            <div class="wrap-logo">
+              <a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
+              <strong>Refersion</strong>
+            </div>
+            <nav class="navi">
+              <a href="#" id="toggle-link" class="nav-link dashboard-link">Dashboard</a>
+              <a href="#" class="nav-link marketplace-link active-marketplace">Marketplace</a>
+              <div id="message" class="recent">  <!--Recent block-->
+                <h6 class="recent-title">RECENT</h6>
+                <div class="wrap-recent">
+                  <div class="recent-offer clearfix">
+                    <img src="img/mini-zero.png" alt="#" class="mini-offer-image">
+                    <h4 class="offer-title">Plan Zero</h4>
+                    <span class="your-earned">You earned $129.00 <i class="fa fa-caret-up up-arrow" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+                <div class="wrap-recent">
+                  <div class="recent-offer clearfix">
+                    <img src="img/mini-zero.png" alt="#" class="mini-offer-image">
+                    <h4 class="offer-title">Plan Zero</h4>
+                    <span class="your-earned">You earned $129.00 <i class="fa fa-caret-up up-arrow" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+                <div class="wrap-recent">
+                  <div class="recent-offer clearfix">
+                    <img src="img/mini-zero.png" alt="#" class="mini-offer-image">
+                    <h4 class="offer-title">Plan Zero</h4>
+                    <span class="your-earned">You earned $129.00 <i class="fa fa-caret-up up-arrow" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+                <h4 class="all-offer-link">View all your offer</h4>   
+              </div>   
+            </nav>
+            <div class="hamburger icon-close"> <!--Hamburger menu-->
+              <button class="toggle_mnu hamburger">
+                <span class="sandwich">
+                  <span class="sw-topper"></span>
+                  <span class="sw-bottom"></span>
+                  <span class="sw-footer"></span>
+                </span>
+              </button>
+            </div>
+            <nav class="top_mnu"><!--attached files-->
+              <div class="wrap-aatch-mnu">
+                <div class="login-top-mnu">
+                  <i class="fa fa-comments" aria-hidden="true"></i>
+                  <!-- <div class="dropdown login-dropdown"> -->
+                    <button class="btn btn-login-mnu btn-default dropdown-toggle login-dropdown-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      John Smith
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="submenu login-submenu">
+                      <li class="submenu-list"><a href="#"></a>item 1</li>
+                      <li class="submenu-list"><a href="#"></a>item 2</li>
+                      <li class="submenu-list"><a href="#"></a>item 3</li>
+                    </ul>
+                </div>
+                <div class="nav-link nav-link-hidden">
+                  <a id="toggle-link" class="dashboard-link attach-dashboard-link" href="#">Dashboard</a>
+                  <ul class="submenu dashboard-submenu">
+                    <li class="submenu-list"><a href="#"></a>item 1</li>
+                    <li class="submenu-list"><a href="#"></a>item 2</li>
+                    <li class="submenu-list"><a href="#"></a>item 3</li>
+                  </ul>
+                </div>
+                <div class="nav-link nav-link-hidden">
+                  <a class="attach-marketplace-link" href="#">Marketplace</a>
+                </div>
+              </div>
+            </nav>
+       
+            <div class="login">
+              <i class="fa fa-comments" aria-hidden="true"></i>
+              <div class="dropdown login-dropdown">
+                <button class="btn btn-default dropdown-toggle login-dropdown-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  John Smith
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-header" aria-labelledby="dropdownMenu1">
+                  <li class="dropdown-menu-header-list"><a class="edit-your-profile" href="#"><i class="fa fa-user" aria-hidden="true"></i>Edit your profile</a></li>
+                  <li class="dropdown-menu-header-list"><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>Notification Settings</a></li>
+                  <li class="dropdown-menu-header-list"><a href="#"><i class="fa fa-comment" aria-hidden="true"></i>Feedback</a></li>
+                  <li role="separator" class="divider login-divider"></li>
+                  <li class="dropdown-menu-header-list"><a class="logout" href="#">Log Out <i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>        
+        </header><!--  Header finish  -->
+<!--         <div class="wrapper-modal wrap-change-login"> change password modal window
+  <div class="modal-ref modal-change-pas container-fluid">
+    <div class="modal-header">
+      <img src="img/close.png" alt="close" class="close-icon-header">
+      <h6 class="change-pas-title">Change your password</h6>
+    </div>
+    <div class="wrap-link-container">
+      <p>
+        <form action="get" class="form-chage-pas">
+          <p class="change-instruction">Current Password</p>
+          <input class="pass-form" type="password" placeholder=" Type current password">
+          <div class="change-instruction">New Password</div>
+          <input class="pass-form" type="password" placeholder=" Type a new password">
+          <input class="pass-form" type="password" placeholder=" Confirm new password">
+          <input class="submit-pas" value="Save Changes" type="submit">
+        </form>
+      </p>
+    </div>  
+  </div>
+</div>change password modal window finish -->
+        <div class="sub-header clearfix">  <!--sub-header-->
+          <div class="sub-header-center">
+            <form action="get" class="search">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <input type="search" class="search-field" placeholder="Type to search for offers">
+            </form>
+          </div>
+        </div><!--   Sub-header finish  -->
+        <section class="main-block "> <!-- Main block-->
+          <main class="search-result container-fluid"> <!-- Search-result-->
+            <div class="header-search-result clearfix">
+              <h3 class="title-search-result">1 result for “Plan Zero”</h3>
+              <div class="sort-by">
+                <span>Sort by:</span> 
+                <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Newest First
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu newest-dropdown" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="main-search-result row "> 
+              <div class="col-lg-3 col-sm-2 result-logo">
+                <img class="result-image" src="img/plan-zero.png" alt="image">
+              </div>
+              <div class="col-lg-2 col-sm-3 result-info">
+                <span class="brand-name">Plan Zero</span>
+                <span class="description">Clothing</span>
+                <a href="#" target="_blank" class="link">www.plansero.co</a>              
+              </div>
+              <div class="col-lg-3 col-sm-4 result-price">
+                <span class="sale"><span class="green-border">15%</span> per sale</span>
+                <span class="cookie-day"><span class="green-border">30</span> Cookie Days</span>
+                <!-- <span class="price">$29.00 average EPC</span> -->
+              </div>
+              <div class="col-lg-4 col-sm-3 result-button">
+                <a  href="#login-form" rel="modal:open" class="offer-button">View offer</a>
+                <span class="price">$29.00 average EPC</span>
+              </div>
+            </div>
+            <div class="main-search-result row">
+              <div class="col-lg-3 col-sm-2 result-logo">
+                <img class="result-image" src="img/plan-zero.png" alt="image">
+              </div>
+              <div class="col-lg-2 col-sm-3 result-info">
+                <span class="brand-name">Plan Zero</span>
+                <span class="description">Clothing</span>
+                <a href="www.planzero.co" target="_blank" class="link">www.plansero.co</a>              
+              </div>
+              <div class="col-lg-3 col-sm-4 result-price">
+                <span class="sale"><span class="green-border">15%</span> per sale</span>
+                <span class="cookie-day"><span class="green-border">30</span> Cookie Days</span>
+                <!-- <span class="price">$29.00 average EPC</span> -->
+              </div>
+              <div class="col-lg-4 col-sm-3 result-button">
+                <a href="#login-form" rel="modal:open" class="offer-button">View offer</a>
+                <span class="price">$29.00 average EPC</span>
+              </div>
+            </div>
+            <div class="main-search-result row ">
+              <div class="col-lg-3 col-sm-2 result-logo">
+                <img class="result-image" src="img/plan-zero.png" alt="image">
+              </div>
+              <div class="col-lg-2 col-sm-3 result-info">
+                <span class="brand-name">Plan Zero</span>
+                <span class="description">Clothing</span>
+                <a href="www.planzero.co" target="_blank" class="link">www.plansero.co</a>              
+              </div>
+              <div class="col-lg-3 col-sm-4 result-price">
+                <span class="sale"><span class="green-border">15%</span> per sale</span>
+                <span class="cookie-day"><span class="green-border">30</span> Cookie Days</span>
+                <!-- <span class="price">$29.00 average EPC</span> -->
+              </div>
+              <div class="col-lg-4 col-sm-3 result-button">
+                <a href="#login-form" rel="modal:open" class="offer-button">View offer</a>
+                <span class="price">$29.00 average EPC</span>
+              </div>
+            </div>
+            <div class="main-search-result row ">
+              <div class="col-lg-3 col-sm-2 result-logo">
+                <img class="result-image" src="img/plan-zero.png" alt="image">
+              </div>
+              <div class="col-lg-2 col-sm-3 result-info">
+                <span class="brand-name">Plan Zero</span>
+                <span class="description">Clothing</span>
+                <a href="www.planzero.co" target="_blank" class="link">www.plansero.co</a>    
+              </div>
+              <div class="col-lg-3 col-sm-4 result-price">
+                <span class="sale"><span class="green-border">15%</span> per sale</span>
+                <span class="cookie-day"><span class="green-border">30</span> Cookie Days</span>
+                <!-- <span class="price">$29.00 average EPC</span> -->
+              </div>
+              <div class="col-lg-4 col-sm-3 result-button">
+                <a href="#login-form" rel="modal:open" class="offer-button">View offer</a>
+                <span class="price">$29.00 average EPC</span>
+              </div>
+            </div>
+            <div class="main-search-result row ">
+              <div class="col-lg-3 col-sm-2 result-logo">
+                <img class="result-image" src="img/plan-zero.png" alt="image">
+              </div>
+              <div class="col-lg-2 col-sm-3 result-info">
+                <span class="brand-name">Plan Zero</span>
+                <span class="description">Clothing</span>
+                <a href="www.planzero.co" target="_blank" class="link">www.plansero.co</a>              
+              </div>
+              <div class="col-lg-3 col-sm-4 result-price">
+                <span class="sale"><span class="green-border">15%</span> per sale</span>
+                <span class="cookie-day"><span class="green-border">30</span> Cookie Days</span>
+                <!-- <span class="price">$29.00 average EPC</span> -->
+              </div>
+              <div class="col-lg-4 col-sm-3 result-button">
+                <a href="#login-form" rel="modal:open" class="offer-button">View offer</a>
+                <span class="price">$29.00 average EPC</span>
+              </div>
+            </div> <!-- Search-result finish-->
+            <div class="paginations row"> <!-- Pagination-->
+              <div class="left col-xs-3">
+                <a class="hover-link" href="#">
+                <span class="left-arrow">
+                  <i class="fa fa-caret-left" aria-hidden="true"></i>
+                </span>
+                <span class="prev" href="#">Prev</span>
+                </a>
+              </div>
+              <div class="center col-xs-6">
+                <div class="center-container">
+                  <a href="#" class="left-center">Page 1</a>
+                  <span>of</span>
+                  <a href="#" class="right-center">100</a>
+                </div>
+              </div>
+              <div class="right col-xs-3">
+                <a class="hover-link " href="#">
+                  <span class="next">Next</span>
+                  <span class="right-arrow">
+                    <i class="fa fa-caret-right" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </main>
+          <div class="right-sidebar"> <!-- Right-sidebar-->
+            <div class="wrap-sidebar">
+              <button class="clear-button">Clear Filters <i class="fa fa-times" aria-hidden="true"></i></button>
+              <div class="wrap-slider">
+                <h5 class="sidebar-subtitle first-subtitle">Average earning per click</h5>
+                  <p>
+                    <input type="text" class="input-slider" id="amount" readonly style="border:0; margin-bottom: 25px; text-align: center; color:#333333; font-weight:bold;">
+                  </p>
+                <div id="slider-range"></div>
+              </div>    
+              <div class="wrap-form">
+                <div class="wrap-forms-distribution"><!--distribution checklist-->
+                  <div class="wrap-distribution">
+                    <h5 class="sidebar-subtitle distribution-subtitle">Distribution <i class="fa fa-angle-down choise-angle-down dist-angle" aria-hidden="true"></i></h5>
+                    <form action="get" class="distribution">
+                      <p>
+                        <input type="checkbox" id="first">
+                        <label for="first">Custom Links</label><br>
+                        <input type="checkbox" id="second">
+                        <label for="second">Coupon/Discount Code</label><br>
+                        <input type="checkbox" id="thirt">
+                        <label for="thirt">Banners/ Creatives</label><br>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <div class="wrap-form-payment">  
+                    <div class="wrap-payment"><!--payment checklist-->
+                      <h5 class="sidebar-subtitle payment-subtitle">Payment method <i class="fa fa-angle-down choise-angle-down pay-angle" aria-hidden="true"></i></h5>   
+                      <form action="get" class="payment">
+                        <p>
+                          <input type="checkbox" id="fifth"><label for="fifth">Paypal</label><br>
+                          <input type="checkbox" id="sixth"><label for="sixth">Gift Cart</label><br>
+                          <input type="checkbox" id="seventh"><label for="seventh">Other</label><br>
+                        </p>
+                      </form>
+                    </div>
+                </div>
+                <div class="wrap-offer-cetegories"><!--offer-caterogies checklist-->
+                  <h5 class="sidebar-subtitle offer-cat-subtitle">Offer Categories <i class="fa choise-angle-down offer-angle fa-angle-right" aria-hidden="true"></i></h5>
+                  <form action="get" class="offer-categories">
+                    <p>
+                      <input type="checkbox" id="eight"><label for="eight">All categories</label><br>
+                      <input type="checkbox" id="ninth"><label for="ninth">Arts, crafts and collectibles</label><br>
+                      <input type="checkbox" id="eleventh"><label for="eleventh">Baby</label><br>
+                      <input type="checkbox" id="twelwth"><label for="twelwth">Beaty and fragrances</label><br>
+                      <input type="checkbox" id="thirteenth"><label for="thirteenth">Business to business</label><br>
+                      <input type="checkbox" id="forteenth"><label for="forteenth">Clothing, accessories, and shoes</label><br>
+                      <input type="checkbox" id="fiftinth"><label for="fiftinth">Computers, acessories and service</label><br>
+                      <input type="checkbox" id="sixteenth"><label for="sixteenth">Education</label><br>
+                      <input type="checkbox" id="seventeenth"><label for="seventeenth">Electronics and telecom</label><br> 
+                      <input type="checkbox" id="eighteenth"><label for="eighteenth">Entertainmant and media</label><br>
+                      <input type="checkbox" id="nineteenth"><label for="nineteenth">Financial services and products</label><br> 
+                      <input type="checkbox" id="twentyth"><label for="twentyth">Food retail and service</label><br>
+                      <input type="checkbox" id="twenty-first"><label for="twenty-first">Gifts and flowers</label><br>
+                      <input type="checkbox" id="twenty-second"><label for="twenty-second">Healthe and personal cars</label><br>
+                      <input type="checkbox" id="twenty-thirth"><label for="twenty-thirth">Home and garden</label><br>
+                      <input type="checkbox" id="twenty-fourth"><label for="twenty-fourth">Nonprofit</label><br>
+                      <input type="checkbox" id="twenty-fifth"><label for="twenty-fifth">Pets and animals</label><br>
+                      <input type="checkbox" id="twenty-sixth"><label for="twenty-sixth">Religion and spirituality (for profit)</label><br>
+                      <input type="checkbox" id="twenty-seventh"><label for="twenty-seventh">Retail ( not elsewhere classifield )</label><br>
+                      <input type="checkbox" id="twenty-eigth"><label for="twenty-eigth">Service - other</label><br>
+                      <input type="checkbox" id="twenty-ninth"><label for="twenty-ninth">Sports, fitness, and outdoors</label><br>
+                      <input type="checkbox" id="thirtieth"><label for="thirtieth">Toys and hobbies</label><br>
+                      <input type="checkbox" id="thirtieth-first"><label for="thirtieth-first">Travel</label><br>
+                      <input type="checkbox" id="thirtieth-second"><label for="thirtieth-second">Vehicle service and accessories</label><br>
+                      <input type="checkbox" id="thirtieth-thirth"><label for="thirtieth-thirth">Adult - 18 and over</label><br>
+                      <input type="checkbox" class="checkbox">
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> <!-- Right-sidebar finish-->
+        <footer class="footer clearfix"> <!-- Footer start -->
+            <div class="footer-content container">
+              <div class="row top-footer ">
+                <div class="wrap-revers">
+                  <div class=" col-md-3 col-sm-12">
+                    <span class="newsletter-title"><i class="fa fa-envelope-o" aria-hidden="true"></i>Sign up for our newsletter</span>
+                    <!-- <span class="info-marketer">Curated for independent marketers</span> -->
+                  </div>
+                  <div class="col-md-5 col-sm-12">
+                    <div class="email-form clearfix">
+                      <input type="text" placeholder=" Email Address" class="email"><a href="#" class="email-link"><i class="fa fa-arrow-right email-link-icon" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class=" col-md-4 col-sm-12">
+                  <a href="#" class="bottom-logo">
+                    <img src="img/bottom-logo.png" alt="#">
+                  </a>
+                </div>
+              </div>
+              <div class="row middle-footer">
+                <div class="col-sm-3 col-xs-6 marketplace">
+                  <h4 class="footer-subtitle">Marketplace</h4>
+                  <ul class="list">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Marketplace Listings</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-2 col-xs-6 refersion">
+                  <h4 class="footer-subtitle">Refersion</h4>
+                  <ul class="list">
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Login</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-2 col-xs-6 api">
+                  <ul class="list">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Merchant Login</a></li>
+                    <li><a href="#">Affiliate Login</a></li>
+                    <li><a href="#">API Docs</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 col-xs-6 legal">
+                  <h4 class="footer-subtitle">Legal</h4>
+                  <ul class="list">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-2 col-xs-6 social">
+                  <h4 class="footer-subtitle social-subtitle">Social Media</h4>
+                  <ul class="list">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+      </div>
+            <!--Offer details page-->
+        <div id="login-form" class="modal main-offer-detail" data-remodal-id="modal">
+          <img src="img/close.png" alt="close" class="close-icon-offer">
+          <div class="wrap-modal">
+          <acide id="fixed" class="left-sidebar ">
+            <div class="about-product">
+              <img src="img/product-logo.png" alt="logo" class="product-logo">
+              <h3 class="goods-title">ProGood</h3>
+              <a href="http:/www.progood.com.au" class="goods-link">www.progood.com.au</a>
+              <a href="#" class="send-message-link">Send a message<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+            </div>
+            <div class="earnings clearfix">
+              <div class="pay-image">
+                <span></span>
+              </div>
+              <span class="avg-earning">Avg. Earnings</span>
+              <p class="price-earning-wrap ">
+                <span class="price-earning" >$ 15.00</span>
+                <span class="usd">usd</span>
+              </p>
+            </div>
+            <div class="more-goods-info">
+              <p class="tools"><span>10%</span>Per sale</p>
+              <p class="tools"><span>30</span>Cookie days</p>
+              <p class="tools"><span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>Requires Valid Purchase</p>
+              <div class="material">
+                <p class="material-title">Marketing material</p>
+                <p class="material-description"><i class="fa fa-check" aria-hidden="true"></i>See Creative Section</p>
+              </div>
+              <div class="material bottom-material">
+                <p class="material-title">Payment type</p>
+                <p class="material-description">Paypal <span class="bull">&#8226;</span> Other types</p>
+              </div>
+              <div class="category">
+                <div class="category-part">
+                  <span class="category-title">Category</span>
+                  <span class="category-result">Other</span>
+                </div>
+                <div class="category-part">
+                  <span class="category-title">Posted</span>
+                  <span class="category-result">24th April 2016</span>
+                </div>  
+              </div>
+            </div>
+            <button class="apply double">Apply now<i class="fa fa-arrow-right arrow-right" aria-hidden="true"></i></button>
+          </acide><!--left-sidebar finish-->
+          <div class="details-main-content"><!-- details-main-content-->
+            <div class="wrap-header-details">
+              <div class="header-details">
+                <div class="nav-header-details details-offer">
+                  <a href="#" class="step-title active-step">The Offer</a>
+
+                </div>
+                <div class="nav-header-details details-creative">
+                  <a href="#" class="step-title">Creatives</a>
+                </div>
+                <div class="nav-header-details terms"><a href="#" class="step-title">Terms</a></div>
+                <div class="nav-header-details details-button">
+                  <button class="apply">Apply now<i class="fa fa-arrow-right arrow-right" aria-hidden="true"></i></button>
+                </div>
+                <hr class="bottom-hr">
+              </div>
+            </div>
+            <div class="main-content">
+              <div id="offer_content" class="goods first-step"> <!--first step slide start-->
+                <h3 class="goods-title-content">ProGood Premium ProBiotics + PreBiotics</h3>
+                <img src="img/probiotics-image.png" alt="image" class="goods-image">
+                <div class="goods-description-wrap">
+                  <p class="goods-description">ProGood is a family owned Australian business with over 40 years experience in microbiology and a passion for educating the essentials of having a good digestive system.
+                  </p>
+                  <p class="goods-subdescription">Why do we believe ProGood Premium ProBiotics + PreBiotics is the best brand on the market?</p>
+                  <p class="goods-family">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. </p>
+                </div>
+              </div><!--first step slide finish-->
+              <div  class="goods second-step"> <!--second-step slide start-->
+                <div class="wrap-middle-header clearfix">
+                  <h3 class="goods-title-content second-title">Marketing Material Available</h3>
+                  <span class="items">6 items</span>
+                </div>
+                <div class="second-main clearfix">
+                  <div class="left-content" >
+                    <div class="first-banner">
+                      <h5 class="banner-title">Material title 1</h5>
+                      <p class="banner-subtitle">Banner <span>&#8226;</span> 300 &#215; 120 pixels</p>
+                      <div class="product-border">
+                        <img src="img/banner-logo.png" alt="banner" class="banner-logo">
+                      </div>
+                    </div>
+                    <div class=" first-banner second-banner" >
+                      <h5 class="banner-title">Material title 3</h5>
+                      <p class="banner-subtitle">Banner <span>&#8226;</span> 150 &#215; 120 pixels</p>
+                      <div class="product-border">
+                        <img src="img/banner150x120.png" alt="banner" class="banner-logo">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right-content" >
+                    <div class="first-banner">
+                      <h5 class="banner-title">Material title 2</h5>
+                      <p class="banner-subtitle">Banner <span>&#8226;</span> 600 &#215; 810 pixels</p>
+                      <div class="product-border">
+                        <img src="img/banner-large.png" alt="banner" class="banner-logo">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!--second step finish-->
+              <div  class="goods terms-step"><!--terms step slide start-->
+                <img src="img/third-step-banner.png" alt="" class="top-banner">
+                <h3 class="goods-title-content terms-title">Terms & Conditions</h3>
+                <h5 class="terms-subtitle">Information Collected</h5>
+                <p class="terms-content">We may collect any or all of the information that you give us depending on the type of transaction you enter into, including your name, address, telephone number, and email address, together with data about your use of the website. Other information that may be needed from time to time to process a request may also be collected as indicated on the website.</p>
+                <h5 class="terms-subtitle">Information Use</h5>
+                <p class="terms-content">We use the information collected primarily to process the task for which you visited the website. Data collected in the UK is held in accordance with the Data Protection Act. All reasonable precautions are taken to prevent unauthorised access to this information. This safeguard may require you to provide additional forms of identity should you wish to obtain information about your account details.</p>
+                <h5 class="terms-subtitle">Cookies</h5>
+                <p class="terms-content">Your Internet browser has the in-built facility for storing small files - "cookies" - that hold information which allows a website to recognise your account. Our website takes advantage of this facility to enhance your experience. You have the ability to prevent your computer from accepting cookies but, if you do, certain functionality on the website may be impaired.</p>
+              </div> <!--terms step finish-->
+            </div>  
+          </div>
+        </div>
+        <img src="img/arrow-left.png" alt="arrow" class="arrow-nav-left">
+        <img src="img/arrow-right.png" alt="arrow" class="arrow-nav-right">
+      </div>
+      <script src="js/jquery-1.12.3.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="js/jquery.modal.js" ></script>
+      <script src="js/jquery-ui.js"></script>
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+      <script>
+        $( function() {
+          $( "#slider-range" ).slider({
+            range: true,
+            min: 0,
+            max: 500,
+            values: [ 75, 300 ],
+            slide: function( event, ui ) {
+              $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+            }
+          });
+          $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+            " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+        } );
+      </script>
+      <script src="js/common.js"></script>  
+    </body>
+  </html>

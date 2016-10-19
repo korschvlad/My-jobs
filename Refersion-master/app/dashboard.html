@@ -1,0 +1,576 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <title>Refersion dashboard</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/jquery-ui.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/header.css">
+      <link rel="stylesheet" type="text/css" href="css/footer.css">
+      <link rel="stylesheet" href="css/jquery.modal.css">
+      <link rel="stylesheet" href="css/dashboard.css"/>
+      <link rel="stylesheet" href="css/fonts.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    </head>
+    <body>
+      <div class="wrapper">
+        <header class="header">
+          <div class="header-center ">
+            <div class="wrap-logo">
+              <a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
+              <strong>Refersion</strong>
+            </div>
+            <nav class="navi">
+              <a href="#" id="toggle-link" class="nav-link dashboard-link">Dashboard</a>
+              <a href="#" class="nav-link marketplace-link active-marketplace">Marketplace</a>
+              <div id="message" class="recent">  <!--Recent block-->
+                <h6 class="recent-title">RECENT</h6>
+                <div class="wrap-recent">
+                  <div class="recent-offer clearfix">
+                    <img src="img/mini-zero.png" alt="#" class="mini-offer-image">
+                    <h4 class="offer-title">Plan Zero</h4>
+                    <span class="your-earned">You earned $129.00 <i class="fa fa-caret-up up-arrow" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+                <div class="wrap-recent">
+                  <div class="recent-offer clearfix">
+                    <img src="img/mini-zero.png" alt="#" class="mini-offer-image">
+                    <h4 class="offer-title">Plan Zero</h4>
+                    <span class="your-earned">You earned $129.00 <i class="fa fa-caret-up up-arrow" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+                <div class="wrap-recent">
+                  <div class="recent-offer clearfix">
+                    <img src="img/mini-zero.png" alt="#" class="mini-offer-image">
+                    <h4 class="offer-title">Plan Zero</h4>
+                    <span class="your-earned">You earned $129.00 <i class="fa fa-caret-up up-arrow" aria-hidden="true"></i></span>
+                  </div>
+                </div>
+                <h4 class="all-offer-link">View all your offer</h4>   
+              </div>   
+            </nav>
+            <div class="hamburger icon-close"> <!--Hamburger menu-->
+              <button class="toggle_mnu hamburger">
+                <span class="sandwich">
+                  <span class="sw-topper"></span>
+                  <span class="sw-bottom"></span>
+                  <span class="sw-footer"></span>
+                </span>
+              </button>
+            </div>
+            <nav class="top_mnu"><!--attached files-->
+              <div class="wrap-aatch-mnu">
+                <div class="login-top-mnu">
+                  <i class="fa fa-comments" aria-hidden="true"></i>
+                  <!-- <div class="dropdown login-dropdown"> -->
+                    <button class="btn btn-login-mnu btn-default dropdown-toggle login-dropdown-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      John Smith
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="submenu login-submenu">
+                      <li class="submenu-list"><a href="#"></a>item 1</li>
+                      <li class="submenu-list"><a href="#"></a>item 2</li>
+                      <li class="submenu-list"><a href="#"></a>item 3</li>
+                    </ul>
+                </div>
+                <div class="nav-link nav-link-hidden">
+                  <a id="toggle-link" class="dashboard-link attach-dashboard-link" href="#">Dashboard</a>
+                  <ul class="submenu dashboard-submenu">
+                    <li class="submenu-list"><a href="#"></a>item 1</li>
+                    <li class="submenu-list"><a href="#"></a>item 2</li>
+                    <li class="submenu-list"><a href="#"></a>item 3</li>
+                  </ul>
+                </div>
+                <div class="nav-link nav-link-hidden">
+                  <a class="attach-marketplace-link" href="#">Marketplace</a>
+                </div>
+              </div>
+            </nav>
+       
+            <div class="login">
+              <i class="fa fa-comments" aria-hidden="true"></i>
+              <div class="dropdown login-dropdown">
+                <button class="btn btn-default dropdown-toggle login-dropdown-button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                  John Smith
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-header" aria-labelledby="dropdownMenu1">
+                  <li class="dropdown-menu-header-list"><a class="edit-your-profile" href="#"><i class="fa fa-user" aria-hidden="true"></i>Edit your profile</a></li>
+                  <li class="dropdown-menu-header-list"><a href="#"><i class="fa fa-bell" aria-hidden="true"></i>Notification Settings</a></li>
+                  <li class="dropdown-menu-header-list"><a href="#"><i class="fa fa-comment" aria-hidden="true"></i>Feedback</a></li>
+                  <li role="separator" class="divider login-divider"></li>
+                  <li class="dropdown-menu-header-list"><a class="logout" href="#">Log Out <i class="fa fa-sign-out" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>        
+        </header><!--  Header finish  -->
+<!--         <div class="wrapper-modal wrap-change-login"> change password modal window
+  <div class="modal-ref modal-change-pas container-fluid">
+    <div class="modal-header">
+      <img src="img/close.png" alt="close" class="close-icon-header close-ic">
+      <h6 class="change-pas-title">Change your password</h6>
+    </div>
+    <div class="wrap-link-container">
+      <p>
+        <form action="get" class="form-chage-pas">
+          <p class="change-instruction">Current Password</p>
+          <input class="pass-form" type="password" placeholder=" Type current password">
+          <div class="change-instruction">New Password</div>
+          <input class="pass-form" type="password" placeholder=" Type a new password">
+          <input class="pass-form" type="password" placeholder=" Confirm new password">
+          <input class="submit-pas" value="Save Changes" type="submit">
+        </form>
+      </p>
+    </div>  
+  </div>
+</div>   -->
+        <div class="main-wrap"><!-- main content -->
+          <div class="left-sidebar">
+            <div class="left-sidebar-wrap">
+              <div class="avatar">
+                <img src="img/ava.png" alt="avatar" class="ava-img">
+                <div class="edit-bg">
+                  <a href="#" class="edit">EDIT</a>
+                </div>
+              </div>
+              <div class="welcome-block">
+                <div class="welcome-title">Welcome, <span class="welcome-name">Kyle</span></div>
+                <a href="#" class="welcome-link">www.kyleskelly.co.uk</a>
+                <p class="welcome-description">
+                  This is an example of a short bio section to some up yourself to affiliate marketers. Limited to so many characters.
+                </p>
+              </div>
+              <div class="social-media">
+                <div class="info">
+                  <p>Avg. Earnings per click</p>
+                  <span>$0.12</span>
+                </div>
+                <div class="info">
+                  <p>Lifetime Sales Generated</p>
+                  <span>6219</span>
+                </div>
+                <div class="info">
+                  <p>Connected social media</p>
+                  <ul class="social-list-left clearfix">
+                    <li class="fs-link"><a class="social-container" href="#"></a></li>
+                    <li class="tw-link"><a class="social-container" href="#"></a></li>
+                    <li class="insta-link"><a class="social-container" href="#"></a></li>
+                    <li class="plus-link"><a class="social-container" href="#">+</a></li>
+                  </ul>
+                </div>
+              </div>
+              <a href="#" class="edit-profile"><i class="fa fa-cog" aria-hidden="true"></i>Edit your profile settings</a>
+            </div>
+          </div><!--finish left-sidebar-->
+          <div class="offer-content">
+            <div class="offer-content-center">
+              <div class="offer-header clearfix">
+                <div class="wrapper-link-header clearfix">
+                <a href="#" class="active-offer-header active-header" >
+                  <span>20 Active Offers</span>
+                </a>
+                <a href="#" class="pending-offer-header">
+                  <span>4 Pending Offers</span>
+                </a>
+                </div>
+                <hr class="bott-hr" >  
+              </div>
+              <div class="offer container-fluid">
+                <div class="offer-info row">
+                  <div class="col-sm-3">
+                    <img src="img/plan-zero.png" alt="img" class="offer-img">
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="merchart-info">Plan Zero <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                    <a href="#" class="merchart-link">www.planzero.co</a>
+                  </div>
+                  <div class="col-sm-2">
+                    <span class="conversions" >Conversions</span>
+                    <span class="conversions-number">25</span>
+                  </div>
+                  <div class="col-sm-4">
+                    <span class="estimated">Next Estimated Payment</span>
+                    <span class="estimated-rate">$1,763</span>
+                  </div>
+                </div>
+                <div class="wrap-promote-button">
+                  <span class="promote-button" >Promote this offer</span><i class="fa fa-caret-right small-arrow" aria-hidden="true"></i>
+                </div>
+                <div class="promotion-tools row">  <!--Promotion tools-->
+                <span class="close-promotion">Close Promotion Tools <i class="fa fa-caret-down small-arrow" aria-hidden="true"></i></span>
+                  <hr class="line" >
+                  <div class="col-sm-3">
+                    <div class="promotion-link referral-link-button">
+                      <div class="icon-wrap">
+                        <i class="fa fa-link fa-2x promotion-icon" aria-hidden="true"></i>
+                      </div>
+                      <span class="promotion-description">Referral-link</span>
+                    </div>
+                    <div class="wrap-modal wrapper-modal wrap-modal-ref"> <!--referral modal window-->
+                      <div class="modal-ref container-fluid">
+                        <div class="modal-header">
+                        <img src="img/close.png" alt="close" class="close-icon">
+                          <img src="img/plan-zero.png" class="modal-header-img">
+                          <h5 class="modal-header-title">Promote with Referral Link</h5>
+                        </div>
+                        <div class="wrap-link-container">
+                          <div class="link-container row">
+                            <div class="col-sm-7">
+                              <span class="link-description">REFERRAL LINK</span>
+                              <a href="#" class="refferal-link">www.refersion.com/rfsn=29.a122</a>
+                            </div>
+                            <div class="col-sm-5">
+                              <a href="#" class="copy-link">Copy Link</a>
+                            </div>    
+                          </div>
+                        </div>  
+                        <div class="promote-icon clearfix">
+                          <div class="shorten-container">
+                            <a href="#" class="icon-link"><i class="fa fa-link modal-icon" aria-hidden="true"></i>Shorten Link</a>
+                          </div>
+                          <div class="soc-icon-container">
+                            <a href="#" class="icon-link"><i class="fa promotion-icon fa-users modal-icon" aria-hidden="true"></i>Share on Social Media</a>
+                          </div>
+                        </div>  
+                      </div>
+                    </div><!--referral modal window finish-->
+                  </div>
+
+                  <div class="col-sm-3">
+                    <div class="promotion-link affiliate-button">
+                      <div class="icon-wrap">
+                        <i class="fa fa-2x promotion-icon fa-ticket" aria-hidden="true"></i>
+                      </div>
+                      <span class="promotion-description">Affiliate Codes</span>
+                    </div>
+                    <div class="wrap-modal wrapper-modal wrap-modal-affiliate"> <!--affiliate modal window-->
+                      <div class="modal-ref modal-affiliate container-fluid">
+                        <div class="modal-header">
+                        <a href="#" class="close-icon" rel="modal:close"><img src="img/close.png" alt="close"></a>
+                          <img src="img/plan-zero.png" class="modal-header-img">
+                          <h5 class="modal-header-title">Promote with Affiliate Code</h5>
+                        </div>
+                        <div class="link-container row">
+                          <div class="col-sm-7">
+                            <span class="link-description">AFFILIATE CODE</span>
+                            <a href="#" class="refferal-link">hu1fu7y</a>
+                          </div>
+                          <div class="col-sm-5">
+                            <a href="#" class="copy-link">Copy Link</a>
+                          </div>    
+                        </div>
+                        <div class="link-container row">
+                          <div class="col-sm-7">
+                            <span class="link-description">AFFILIATE CODE</span>
+                            <a href="#" class="refferal-link">hu1fu7y</a>
+                          </div>
+                          <div class="col-sm-5">
+                            <a href="#" class="copy-link">Copy Link</a>
+                          </div>    
+                        </div>
+                        <div class="link-container row">
+                          <div class="col-sm-7">
+                            <span class="link-description">AFFILIATE CODE</span>
+                            <a href="#" class="refferal-link">hu1fu7y</a>
+                          </div>
+                          <div class="col-sm-5">
+                            <a href="#" class="copy-link">Copy Link</a>
+                          </div>    
+                        </div>
+                        <div class="link-container row">
+                          <div class="col-sm-7">
+                            <span class="link-description">AFFILIATE CODE</span>
+                            <a href="#" class="refferal-link">hu1fu7y</a>
+                          </div>
+                          <div class="col-sm-5">
+                            <a href="#" class="copy-link">Copy Link</a>
+                          </div>    
+                        </div>
+                        <div class="promote-icon clearfix">
+                          <div class="shorten-container">
+                            <a href="#" class="icon-link"><i class="fa fa-link modal-icon" aria-hidden="true"></i>Shorten Link</a>
+                          </div>
+                          <div class="soc-icon-container">
+                            <a href="#" class="icon-link"><i class="fa promotion-icon fa-users modal-icon" aria-hidden="true"></i>Share on Social Media</a>
+                          </div>
+                        </div>  
+                      </div>
+                    </div><!--affiliate modal window finish-->
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="promotion-link socmedia-button">
+                      <div class="icon-wrap">
+                        <i class="fa fa-2x promotion-icon fa-users" aria-hidden="true"></i>
+                      </div>
+                      <span class="promotion-description">Social Media</span>
+                    </div>
+                    <div class="wrap-modal wrapper-modal wrap-modal-socmedia"> <!--social-media modal window-->
+                      <div class="modal-ref modal-socmedia  container-fluid">
+                        <div class="modal-header socmedia-header">
+                          <img src="img/close.png" alt="close" class="close-icon">
+                          <img src="img/plan-zero.png" class="modal-header-img">
+                          <h5 class="modal-header-title modal-header-social">Promote by Social Media or Email</h5>
+                        </div>
+                        <ul class="socmedia-wrap">
+                          <li class="socmedia-fs-container"><a class="socmedia-fs-icon promo-link" href="#"></a></li>
+                          <li class="socmedia-tw-container"><a class="socmedia-tw-icon promo-link" href="#"></a></li>
+                          <li class="socmedia-inst-container"><a class="socmedia-inst-icon promo-link" href="#"></a></li>
+                          <li class="socmedia-pint-container"><a class="socmedia-pint-icon promo-link" href="#"></a></li>
+                          <li class="socmedia-letter-container"><a class="socmedia-letter-icon promo-link-last" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                        </ul>
+                        <div class="wrap-promo-code">
+                          <p class="socmedia-description">Select a code to add to description</p>
+                          <ul class="socmedia-code-wrap">
+                            <li><a class="socmedia-code-link" href="#">hu1fu7y</a></li>
+                            <li><a class="socmedia-code-link" href="#">126jndf</a></li>
+                            <li><a class="socmedia-code-link" href="#">8yjbjngj</a></li>
+                            <li><a class="socmedia-code-link" href="#">sadb63</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div><!--social-media modal window finish-->
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="promotion-link deep-link">
+                      <div class="icon-wrap">
+                        <i class="fa fa-2x promotion-icon fa-external-link" aria-hidden="true"></i>
+                      </div>
+                      <span class="promotion-description">Deep Link</span>
+                    </div>
+                    <div class="wrap-modal wrapper-modal wrap-modal-deep"> <!--deep modal window-->
+                      <div class="modal-ref container-fluid">
+                        <div class="modal-header">
+                        <img src="img/close.png" alt="close" class="close-icon">
+                          <img src="img/plan-zero.png" class="modal-header-img">
+                          <h5 class="modal-header-title">Promote with Deep Link</h5>
+                        </div>
+                        <div class="wrap-link-container">
+                          <div class="link-container row">
+                            <div class="col-sm-7">
+                              <span class="link-description">ATTACHED</span>
+                              <a href="#" class="refferal-link">www.refersion.com/rfsn=29.a122</a>
+                            </div>
+                            <div class="col-sm-5">
+                              <a href="#" class="copy-link">Copy Link</a>
+                            </div>    
+                          </div>
+                        </div>  
+                        <div class="promote-icon clearfix">
+                          <div class="shorten-container">
+                            <a href="#" class="icon-link"><i class="fa fa-link modal-icon" aria-hidden="true"></i>Shorten Link</a>
+                          </div>
+                          <div class="soc-icon-container">
+                            <a href="#" class="icon-link"><i class="fa promotion-icon fa-users modal-icon" aria-hidden="true"></i>Share on Social Media</a>
+                          </div>
+                        </div>  
+                      </div>
+
+                    </div><!--deep window finish-->
+                  </div>
+                </div>
+              </div>
+              <div class="offer container-fluid">
+                <div class="offer-info row">
+                  <div class="col-sm-3">
+                    <img src="img/banner-logo.png" alt="img" class="offer-img">
+                  </div>
+                  <div class="col-sm-3">
+                    <span class="merchart-info">ProGood <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                    <a href="#" class="merchart-link">www.progood.com.au</a>
+                  </div>
+                  <div class="col-sm-2">
+                    <span class="conversions" >Conversions</span>
+                    <span class="conversions-number">12</span>
+                  </div>
+                  <div class="col-sm-4">
+                    <span class="estimated">Next Estimated Payment</span>
+                    <span class="estimated-rate">$876.43</span>
+                  </div>
+                </div>
+                <div class="wrap-promote-button">
+                  <span class="promote-button" >Promote this offer</span><i class="fa fa-caret-right small-arrow" aria-hidden="true"></i>
+                </div>
+                <div class="promotion-tools row">  <!--Promotion tools-->
+                  <p class="close-promotion">Close Promotion Tools <i class="fa fa-caret-down small-arrow" aria-hidden="true"></i></p>
+                  <hr class="line" >
+                  <div class="col-sm-3">
+                    <div class="promotion-link">
+                      <div class="icon-wrap">
+                        <i class="fa fa-link fa-2x promotion-icon" aria-hidden="true"></i>
+                      </div>
+                      <span class="promotion-description">Referral-link</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="promotion-link">
+                      <div class="icon-wrap">
+                        <i class="fa fa-2x promotion-icon fa-ticket" aria-hidden="true"></i>
+                      </div>
+                      <span class="promotion-description">Affiliate Codes</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="promotion-link">
+                      <div class="icon-wrap">
+                        <i class="fa fa-2x promotion-icon fa-users" aria-hidden="true"></i>
+                      </div>
+                      <span class="promotion-description">Social Media</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <div class="promotion-link">
+                      <div class="icon-wrap">
+                        <i class="fa fa-2x promotion-icon fa-external-link" aria-hidden="true"></i>
+                      </div>
+                      <span class="promotion-description">Deep Link</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="add-offer">
+                <div class="wrap-plus">
+                  <i class="fa fa-2x fa-plus-circle" aria-hidden="true"></i>
+                </div>  
+                  <span class="add-offer-title">Add more offers</span>
+                  <a href="#" class="brows-link" >Browse the marketplace</a>
+              </div>
+            </div>
+          </div><!--finish offer-content-->
+          <div class="perfomance-sidebar">
+            <div class="perfomance-center">
+              <div class="your-perfomance">
+                <h5 class="perfomance-title">Your Performance</h5>
+                <div class="dropdown dropdown-date">
+                  <button class="btn date btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Last 30 Days
+                    <i class="fa date-angle-down fa-angle-down" aria-hidden="true"></i>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-date" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Last 20 Days</a></li>
+                    <li><a href="#">Last 10 Days</a></li>
+                    <li><a href="#">Last 5 Days</a></li>
+                  </ul>
+                </div>
+                <div class="wrap-perfomance-info">
+                  <div class="perfomance-info">
+                    <span class="perfomance-subtitle">Total Earnings</span>
+                    <span class="perfomance-result"><a href="#" data-toggle="tooltip" data-placement="auto top" title="+ 5% since last 30 days">$80.9k</a> <a href="#" data-toggle="tooltip" data-placement="auto top" title="+ 5% since last 30 days"><i class="fa perfomance-up fa-caret-up" aria-hidden="true"></i></a></span>
+                  </div>
+                  <div class="perfomance-info">
+                    <span class="perfomance-subtitle">Next Estimated Payment</span>
+                    <span class="perfomance-result">$216.00</span>
+                  </div>
+                  <div class="perfomance-info">
+                    <span class="perfomance-subtitle">Payments in Approval</span>
+                    <span class="perfomance-result">$216.00 </i></span>
+                  </div>
+                </div>
+                <div class="wrap-perfomance-info">
+                  <div class="perfomance-info popup-position">
+                    <span class="perfomance-subtitle ">Clicks</span>
+                    <span class="perfomance-result"><a href="#" data-toggle="tooltip" data-placement="auto top" title="+ 5% since last 30 days">125,123</a> <a href="#" data-toggle="tooltip" data-placement="auto top" title="+ 5% since last 30 days"><i class="fa perfomance-up fa-caret-up" aria-hidden="true"></i></a></span>
+                  </div>
+                  <div class="perfomance-info">
+                    <span class="perfomance-subtitle">Conversions</span>
+                    <span class="perfomance-result"><a href="#" data-toggle="tooltip" data-placement="auto bottom" title="- 5% since last 30 days">30,123</a> <a href="#" data-toggle="tooltip" data-placement="auto bottom" title="- 5% since last 30 days"><i class="fa perfomance-down fa-caret-down" aria-hidden="true"></i></a></span>
+                  </div>
+                </div>
+                <div class="perfomance-info">
+                    <span class="perfomance-subtitle">Traffic from Social</span>
+                    <span class="perfomance-result"><a href="#" data-toggle="tooltip" data-placement="auto top" title="+ 5% since last 30 days">10,142</a> <a href="#" data-toggle="tooltip" data-placement="auto top" title="+ 5% since last 30 days"><i class="fa perfomance-up fa-caret-up" aria-hidden="true"></i></a></span>
+                </div>
+                <div class="perfomance-info">
+                    <span class="perfomance-subtitle">Traffic from Websites</span>
+                    <span class="perfomance-result"><a href="#" data-toggle="tooltip" data-placement="auto top" title="+ 5% since last 30 days">15,345</a> <a href="#" data-toggle="tooltip" data-placement="auto top" title="+ 5% since last 30 days"><i class="fa perfomance-up fa-caret-up" aria-hidden="true"></i></a></span>
+                </div>
+                <div class="perfomance-info">
+                    <span class="perfomance-subtitle">Traffic from Creatives</span>
+                    <span class="perfomance-result"><a href="#" data-toggle="tooltip" data-placement="auto bottom" title="- 5% since last 30 days">12,455</a> <a href="#" data-toggle="tooltip" data-placement="auto bottom" title="- 5% since last 30 days"><i class="fa perfomance-down fa-caret-down" aria-hidden="true"></i></a></span>
+                </div>
+              </div>
+            </div>
+          </div><!--finish perfomance-sidebar-->
+        </div>
+          <footer class="footer clearfix"> <!-- Footer start -->
+            <div class="footer-content container">
+              <div class="row top-footer ">
+                <div class="wrap-revers">
+                  <div class=" col-md-3 col-sm-12">
+                    <span class="newsletter-title"><i class="fa fa-envelope-o" aria-hidden="true"></i>Sign up for our newsletter</span>
+                    <!-- <span class="info-marketer">Curated for independent marketers</span> -->
+                  </div>
+                  <div class="col-md-5 col-sm-12">
+                    <div class="email-form clearfix">
+                      <input type="text" placeholder=" Email Address" class="email"><a href="#" class="email-link"><i class="fa fa-arrow-right email-link-icon" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class=" col-md-4 col-sm-12">
+                  <a href="#" class="bottom-logo">
+                    <img src="img/bottom-logo.png" alt="#">
+                  </a>
+                </div>
+              </div>
+              <div class="row middle-footer">
+                <div class="col-sm-3 col-xs-6 marketplace">
+                  <h4 class="footer-subtitle">Marketplace</h4>
+                  <ul class="list">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Marketplace Listings</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-2 col-xs-6 refersion">
+                  <h4 class="footer-subtitle">Refersion</h4>
+                  <ul class="list">
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Login</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-2 col-xs-6 api">
+                  <ul class="list">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Merchant Login</a></li>
+                    <li><a href="#">Affiliate Login</a></li>
+                    <li><a href="#">API Docs</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3 col-xs-6 legal">
+                  <h4 class="footer-subtitle">Legal</h4>
+                  <ul class="list">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-2 col-xs-6 social">
+                  <h4 class="footer-subtitle social-subtitle">Social Media</h4>
+                  <ul class="list">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+      </div>
+      <script src="js/jquery-1.12.3.min.js"></script>
+      <script src="js/jquery-ui.js"></script>
+      <script src="js/jquery.modal.js" ></script>
+      <script src="js/common.js" ></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip(); 
+        });
+        </script>
+    </body>
+  </html>    
